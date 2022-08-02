@@ -1,0 +1,13 @@
+@mixin generateUtilityClass($property, $map) {
+  @each $key, $value in $map {
+    &-#{$key} {
+      #{$property}: $value;
+    }
+  }
+}
+
+@mixin generateCustomProperty($prefix, $map) {
+  @each $key, $value in $map {
+    --#{$prefix}-#{$key}: #{$value};
+  }
+}
