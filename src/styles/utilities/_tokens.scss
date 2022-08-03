@@ -1,0 +1,10 @@
+@use '../config/variables' as *;
+@use '../mixins/generators' as *;
+
+:root {
+  @include generateCustomProperty('font', $fontFamily);
+}
+
+.font {
+  @include generateUtilityClass('font-family', $fontFamily);
+}

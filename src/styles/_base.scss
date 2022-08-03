@@ -1,5 +1,5 @@
 @use './config' as *;
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: var(--font-sans);
 }
